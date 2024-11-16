@@ -1,0 +1,51 @@
+.container {
+    padding: 10vw;
+
+    .smrge-container {
+
+        .logo {
+            background-image: url("../../assets/images/logo.png");
+            width: 10vw;
+            height: 10vw;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 5vw;
+            right: 5vw;
+        }
+        .title {
+            font-size: 6vw;
+            margin-top: 10vw;
+            width: 90%;
+        }
+    }
+    .mobile-input {
+        margin-top: 15vw;
+        border: solid 1px;
+        box-shadow: none;
+        padding: 2vw 4vw;
+        border-radius: 2vw;
+        width: -webkit-fill-available;
+        font-size: 5vw;
+        height: 30vh;
+        resize: none;
+    }
+    .button-container {
+        display: flex;
+        justify-content: right;
+
+        .button {
+            margin-top: 10vw;
+            padding: 2vw 6vw;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 5vw;
+        }
+        .skip {
+            margin-right: 10vw;
+            background-color: unset;
+            color: unset;
+            border: solid 1px;
+        }
+    }
+}

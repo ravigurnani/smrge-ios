@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="smrge-container">
+        <div class="logo"></div>
+        <div class="title">Tell us about your hobbies!</div>
+        <div class="subtitle">Up to 5 hobbies to start a conversation!</div>
+    </div>
+    <div class="hobby-container">
+        <div class="hobby-category" *ngFor="let hobby of hobbies">
+            <div class="hobby-title">{{hobby.name}}</div>
+            <div class="hobby-list">
+                <div (click)="select(item)" [class]="is_selected(item)? 'hobby selected' : 'hobby'" *ngFor="let item of hobby.items">{{item}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <!-- <div class="button skip">Skip</div> -->
+        <div (click)="submit()" class="button submit">Next</div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="smrge-container">
+        <div class="logo"></div>
+        <div class="title">{{selected_page.title}}</div>
+    </div>
+    <div class="component" *ngIf="selected_page.id==1">
+        <app-people [profiles]="profiles"></app-people>
+    </div>
+    <div class="component" *ngIf="selected_page.id==2">
+        <app-matches [saved_profiles]="saved_profiles"></app-matches>
+    </div>
+    <div class="component" *ngIf="selected_page.id==3">
+        <app-profile></app-profile>
+    </div>
+    <div class="bottom-container">
+        <div (click)="change_page(0)" class="bottom">People</div>
+        <div (click)="change_page(1)" class="bottom">Matches</div>
+        <div (click)="change_page(2)" class="bottom">Profile</div>
+    </div>
+</div>

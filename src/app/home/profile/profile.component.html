@@ -1,0 +1,49 @@
+<div *ngIf="user" class="user-container">
+    <!-- <div (click)="close_profile()" class="cross"></div> -->
+    <div [ngStyle]="{'background-image': 'url(' + user.profile1 + ')'}" class="photo top"></div>
+    <div class="info-container">
+        <div class="name">{{user.name}}</div>
+        <div class="age">{{get_gender_age(user.dob, user.gender)}}</div>
+        <div class="description">{{user.description}}</div>
+        <div class="social-container">
+            <div class="sm-container">
+                <div (click)="redirect('https://facebook.com/' + user.facebook)" class="social facebook"></div>
+                <label class="switch">
+                    <input type="checkbox" [checked]="user.facebook_public">
+                    <span class="slider round"></span>
+                </label>
+                <!-- <input type="checkbox" class="slider round"> -->
+            </div>
+            <div class="sm-container">
+                <div (click)="redirect('https://instagram.com/' + user.insta)" class="social insta"></div>
+                <label class="switch">
+                    <input type="checkbox" [checked]="user.insta_public">
+                    <span class="slider round"></span>
+                </label>
+                <!-- <input type="checkbox" class="slider round"> -->
+            </div>
+            <div class="sm-container">
+                <div (click)="redirect('https://linkedin.com/in/' + user.linkedin)" class="social linkedin"></div>
+                <label class="switch">
+                    <input type="checkbox" [checked]="user.linkedin_public">
+                    <span class="slider round"></span>
+                </label>
+                <!-- <input type="checkbox" class="slider round"> -->
+            </div>
+            <div class="sm-container">
+                <div (click)="redirect('https://twitter.com/' + user.twitter)" class="social twitter"></div>
+                <label class="switch">
+                    <input type="checkbox" [checked]="user.twitter_public">
+                    <span class="slider round"></span>
+                </label>
+                <!-- <input type="checkbox" class="slider round"> -->
+            </div>
+        </div>
+    </div>
+    <div *ngIf="user.profile2" [class]="(user.profile2!.length > 10)? 'photo' : 'nophoto'" [ngStyle]="{'background-image': 'url(' + user.profile2 + ')'}"></div>
+    <div *ngIf="user.profile2" [class]="(user.profile3!.length > 10)? 'photo' : 'nophoto'" [ngStyle]="{'background-image': 'url(' + user.profile3 + ')'}"></div>
+    <!-- <div class="decision-container">
+        <div (click)="close_profile()" class="icon reject"></div>
+        <div (click)="save_profile(id!)" class="icon select"></div>
+    </div> -->
+</div>

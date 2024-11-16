@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="smrge-container">
+        <div class="logo"></div>
+        <div class="title">Tell us about yourself</div>
+    </div>
+    <input [(ngModel)]="name" class="mobile-input" placeholder="Name" type="text">
+    <input [(ngModel)]="dob" class="mobile-input" placeholder="Date of birth" type="date">
+    <!-- <input class="mobile-input" placeholder="Gender" type=""> -->
+    <select [(ngModel)]="gender" class="mobile-input">
+        <option disabled selected value>Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+    <div class="button-container">
+        <div (click)="register()" class="button submit">Submit</div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="smrge-container">
+        <div class="logo"></div>
+        <div class="title">Please enter your social media handles</div>
+        <div class="subtitle">Add atleast one to continue</div>
+    </div>
+    <div class="social-container">
+       <!-- <div class="social">
+            <div class="image facebook"></div>
+           <input <button (click)="facebookLogin()" class="fb-login-btn">Login with Facebook</button> 
+           <input [(ngModel)]="facebook" class="mobile-input" placeholder="facebook" type="text">
+            <input <p>{{ profileMessage }}</p> 
+        </div> -->
+        <div class="social">
+            <div class="image instagram"></div>
+            <input [(ngModel)]="instagram" class="mobile-input" placeholder="instagram" type="text">
+            <p (click) = "instaHelp()"><span title="Help information">&#9432;</span></p>
+        </div>
+        <div class="social">
+            <div class="image linkedin"></div>
+            <input [(ngModel)]="linkedin" class="mobile-input" placeholder="linkedin" type="text">
+        </div>
+        <div class="social">
+            <div class="image twitter"></div>
+            <input [(ngModel)]="twitter" class="mobile-input" placeholder="twitter" type="text">
+        </div>
+    </div>
+    <div class="button-container">
+        <!-- <div class="button skip">Skip</div> -->
+        <div (click)="submit()" class="button submit">Next</div>
+    </div>
+    <!-- Custom modal -->
+<div id="customAlert" style="display: none;">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Insta profile help</h2>
+      <p>Profile Tab -> Share Profile -> Copy link</p>
+      <img src="InstaUrlHelp.png" alt="Example Image">
+    </div>
+  </div>
+</div>
+

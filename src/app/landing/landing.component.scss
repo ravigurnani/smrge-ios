@@ -1,0 +1,115 @@
+[class^="number-slide"],
+[class*=" number-slide"] {
+//   background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+//   height: 300px;
+  height: 100vh;
+}
+
+.number-slide1 {
+  background: url("../../assets/images/journey_business.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.description{
+  background: linear-gradient(
+    90deg,
+    rgba(215, 43, 58, 0.7) 0%,
+    rgba(216, 111, 65, 0.7) 100%
+  );
+  width: 100vw;
+  padding: 2vw;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  letter-spacing: 0.6vw;
+  top: 80%;
+  position: absolute;
+}
+.top-button{
+    background-color: rgba(179, 38, 30, 1);
+    position: absolute;
+    top: 5vw;
+    right: 5vw;
+    padding: 2vw 5vw;
+    border-radius: 3vw;
+    color: white;
+}
+.logo{
+    position: absolute;
+    top: 4vw;
+    left: 45vw;
+    background: url("../../assets/images/logo.png");
+    width: 10vw;
+    height: 10vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.number-slide2 {
+  background: url("../../assets/images/journey_festival.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.number-slide3 {
+  background: url("../../assets/images/journey_college.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.number-slide4 {
+  background: url("../../assets/images/journey_cafe.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.number-slide5 {
+
+    .conclusion-container{
+        font-size: 15vw;
+        display: flex;
+        flex-direction: column;
+        padding: 10vw;
+        line-height: 22vw;
+
+        .another{
+            display: flex;
+
+            .just {
+                margin-right: 4vw;
+            }
+            .smrge{
+                color: rgba(207, 85, 40, 1);
+            }
+        }
+    }
+}
+
+.dot-container {
+    position: absolute;
+    z-index: 5;
+    bottom: 10vh;
+    display: flex;
+    width: 40vw;
+    justify-content: space-evenly;
+    padding: 0vw 30vw;
+
+
+    .dot {
+        width: 3vw;
+        height: 3vw;
+        border-radius: 100%;
+        // border: 1px solid black
+    }
+    .active {
+        background-color: rgba(207, 85, 40, 1);
+    }
+    .inactive {
+        background-color: rgba(255, 152, 114, 1);
+    }
+}

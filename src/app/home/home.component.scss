@@ -1,0 +1,43 @@
+.container {
+    // padding: 10vw;
+    height: 100vh;
+
+    .smrge-container {
+
+        .logo {
+            background-image: url("../../assets/images/logo.png");
+            width: 10vw;
+            height: 10vw;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 5vw;
+            right: 5vw;
+        }
+        .title {
+            position: absolute;
+            top: 6.5vw;
+            left: 0;
+            width: 100vw;
+            text-align: center;
+            font-size: 5vw;
+        }
+    }
+    .component {
+        padding-top: 8vw;
+    }
+    .bottom-container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        width: 100vw;
+        border: solid 1px;
+
+        .bottom {
+            flex-grow: 1;
+            text-align: center;
+            margin: 5vw;
+        }
+    }
+}

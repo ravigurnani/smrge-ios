@@ -1,0 +1,35 @@
+<div class="keen-slider" #sliderRef>
+    <div class="keen-slider__slide number-slide1">
+        <div class="description">From business seminars</div>
+        <div (click)="go()" class="top-button">Skip</div>
+    </div>
+    <div class="keen-slider__slide number-slide2">
+        <div class="description">To music festivals</div>
+        <div (click)="go()" class="top-button">Skip</div>
+    </div>
+    <div class="keen-slider__slide number-slide3">
+        <div class="description">From college campuses</div>
+        <div (click)="go()" class="top-button">Skip</div>
+    </div>
+    <div class="keen-slider__slide number-slide4">
+        <div class="description">To cafes</div>
+        <div (click)="go()" class="top-button">Skip</div>
+    </div>
+    <div class="keen-slider__slide number-slide5">
+        <div class="conclusion-container">
+            <div class="conclusion">see someone interesting?</div>
+            <div class="another">
+                <div class="just">just</div>
+                <div class="smrge">smrge</div>
+            </div>
+        </div>
+        <div (click)="go()" class="top-button">Next</div>
+        <div class="logo"></div>
+    </div>
+    <div class="dot-container">
+        <div
+        *ngFor="let item of [].constructor(5); let i = index"
+        [class]="'dot ' + (i === current_slide ? 'active' : 'inactive')"
+        ></div>
+    </div>
+  </div>

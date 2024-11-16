@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="smrge-container">
+        <div class="logo"></div>
+        <div class="title">Add upto 3 photos of yourself</div>
+    </div>
+    <div class="photo-container">
+        <div
+        (click)="get_photo(photo.id)"
+        [id]="'photodiv'+photo.id"
+        [ngStyle]="{'background-image': 'url(' + photo.location + ')'}"
+        class="photo" *ngFor="let photo of photos">
+
+            <div *ngIf="photo.location.length < 5" class="cam-div"></div>
+        </div>
+    </div>
+    <div class="button-container">
+        <!-- <div class="button skip">Skip</div> -->
+        <div (click)="submit()" class="button submit">Next</div>
+    </div>
+</div>

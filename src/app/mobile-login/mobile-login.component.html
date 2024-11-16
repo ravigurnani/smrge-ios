@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="smrge-container">
+        <div class="logo"></div>
+        <div class="title">Say hello to the world around you.</div>
+        <div class="subtitle">Please enter your full phone number (+91-9999999999)</div>
+    </div>
+    <input [(ngModel)]="number" class="mobile-input" placeholder="Mobile Number" type="tel">
+    <div class="button-container">
+        <div (click)="send_otp()" class="button submit">Send OTP</div>
+    </div>
+</div>

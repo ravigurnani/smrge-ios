@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url("./assets/fonts/Avenir\ Next\ LT\ Pro\ Regular.otf");
+    src: url("./assets/fonts/Avenir\ Next\ LT\ Pro\ Regular.otf") format("opentype");
+    font-style: normal;
+}
+
+
+:root {
+    --primary-color: rgba(207, 85, 40, 1);
+    --secondary-color: rgba(207, 32, 38, 1);
+}
+
+body {
+    margin: 0;
+    font-family: "Avenir Next LT Pro";
+}
