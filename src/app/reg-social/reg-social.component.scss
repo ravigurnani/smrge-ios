@@ -52,7 +52,7 @@
             background: url("../../assets/images/linkedin_active.svg");
         }
         .twitter {
-            background: url("../../assets/images/twitter_active.svg");
+            background: url("../../assets/images/X_logo.jpg");
         }
         .image {
             width: 8vw;
@@ -90,7 +90,7 @@
       .modal-content {
         background: #fff;
         padding: 20px;
-        width: 300px;
+        width: 500px;
         border-radius: 8px;
         text-align: center;
         position: relative;
@@ -105,5 +105,55 @@
       }
       .instaHelp {
         background: url("../../assets/images/InstaUrlHelp.png");
-    }
+      }
+
+      #customAlertLinkedIn {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .modal-contentLinkedIn {
+        background: #fff;
+        padding: 20px;
+        width: 1200px;
+        border-radius: 8px;
+        text-align: center;
+        position: relative;
+        overflow: auto;
+      }
+      .linkedInHelp {
+        background: url("../../assets/images/LinkedInHelp.png");
+      }
+
+      #customAlertX {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .modal-contentX {
+        background: #fff;
+        padding: 20px;
+        width: 700px;
+        border-radius: 8px;
+        text-align: center;
+        position: relative;
+        overflow: auto;
+      }
+      .XHelp {
+        background: url("../../assets/images/X_help.png");
+      }
 }

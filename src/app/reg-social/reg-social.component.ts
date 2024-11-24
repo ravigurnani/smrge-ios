@@ -86,6 +86,57 @@ facebookLogin() {
     };
     }
 
+    LinkedInHelp() {
+        //alert(" 1. Open the instagram app\n 2. Click on the profile tab\n 3. Click Share profile\n 4. Copy link. ");
+        //return
+        const modal = document.getElementById('customAlertLinkedIn');
+        const closeBtn = document.getElementById('closeModalLinkedIn');
+      
+        if (modal && modal.style) {
+            modal.style.display = 'flex';
+        }
+      
+        if (closeBtn) {
+        closeBtn.onclick = function () {
+            if (modal)
+            modal.style.display = 'none';
+        };
+    }
+      
+        window.onclick = function (event) {
+          if (event.target === modal) {
+            if (modal)
+            modal.style.display = 'none';
+          }
+        };
+    }
+
+    XHelp() {
+      //alert(" 1. Open the instagram app\n 2. Click on the profile tab\n 3. Click Share profile\n 4. Copy link. ");
+      //return
+      const modal = document.getElementById('customAlertX');
+      const closeBtn = document.getElementById('closeModalX');
+    
+      if (modal && modal.style) {
+          modal.style.display = 'flex';
+      }
+    
+      if (closeBtn) {
+      closeBtn.onclick = function () {
+          if (modal)
+          modal.style.display = 'none';
+      };
+  }
+    
+      window.onclick = function (event) {
+        if (event.target === modal) {
+          if (modal)
+          modal.style.display = 'none';
+        }
+      };
+  }
+    
+
   submit(){
     if (this.facebook.length + this.instagram.length + this.linkedin.length + this.twitter.length < 5){
         alert("Please enter atleast one valid social media handle to continue")
