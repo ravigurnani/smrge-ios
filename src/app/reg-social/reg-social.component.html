@@ -10,19 +10,21 @@
            <input <button (click)="facebookLogin()" class="fb-login-btn">Login with Facebook</button> 
            <input [(ngModel)]="facebook" class="mobile-input" placeholder="facebook" type="text">
             <input <p>{{ profileMessage }}</p> 
-        </div> -->
+        </div> ; -->
         <div class="social">
             <div class="image instagram"></div>
-            <input [(ngModel)]="instagram" class="mobile-input" placeholder="instagram" type="text">
-            <p (click) = "instaHelp()"><span title="Help information">&#9432;</span></p>
+            <input [(ngModel)]="instagram" class="mobile-input" placeholder="Add your id here" type="text">
+            <p (click) = "instaHelp()"><span title="Help information"></span>&#9432;</p>
         </div>
         <div class="social">
             <div class="image linkedin"></div>
-            <input [(ngModel)]="linkedin" class="mobile-input" placeholder="linkedin" type="text">
+            <input [(ngModel)]="linkedin" class="mobile-input" placeholder="Add your id here" type="text">
+            <p (click) = "LinkedInHelp()"><span title="Help information"></span>&#9432;</p>
         </div>
         <div class="social">
             <div class="image twitter"></div>
-            <input [(ngModel)]="twitter" class="mobile-input" placeholder="twitter" type="text">
+            <input [(ngModel)]="twitter" class="mobile-input" placeholder="Add your id here" type="text">
+            <p (click) = "XHelp()"><span title="Help information"></span>&#9432;</p>
         </div>
     </div>
     <div class="button-container">
@@ -36,6 +38,24 @@
       <h2>Insta profile help</h2>
       <p>Profile Tab -> Share Profile -> Copy link</p>
       <img src="InstaUrlHelp.png" alt="Example Image">
+    </div>
+  </div>
+
+  <div id="customAlertLinkedIn" style="display: none;">
+    <div class="modal-contentLinkedIn">
+      <span id="closeModalLinkedIn" class="close">&times;</span>
+      <h2>LinkedIn profile help</h2>
+      <p>Profile pic -> View Profile -> Click ... -> Share Via -> Copy</p>
+      <img src="LinkedInHelp.png" alt="Example Image">
+    </div>
+  </div>
+
+  <div id="customAlertX" style="display: none;">
+    <div class="modal-contentX">
+      <span id="closeModalX" class="close">&times;</span>
+      <h2>X profile help</h2>
+      <p>Profile pic -> Get the handle/id</p>
+      <img src="X_help.png" alt="Example Image">
     </div>
   </div>
 </div>
